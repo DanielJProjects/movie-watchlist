@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import FindMovie from "./Components/FindMovie";
 import PopUp from "./Components/PopUp";
 import WatchlistCard from "./Components/WatchlistCard";
+import Grid from "@mui/material/Grid";
 
 function App() {
   const [popUp, setPopUp] = React.useState(false);
@@ -25,21 +26,29 @@ function App() {
           setWatchlist={setWatchlist}
         />
       )}
-      <div className="watchlist container">
+      <Grid container>
         {watchlist.length
           ? watchlist.map((movie, index) => (
-              <WatchlistCard
-                id={movie.id}
+              <Grid
+                className={"watchlist"}
                 key={index}
-                title={movie.title}
-                image={movie.image}
-                releaseDate={movie.releaseDate}
-                rating={movie.rating}
-                setWatchlist={setWatchlist}
-              />
+                item
+                xs={12}
+                sm={6}
+                md={3}
+              >
+                <WatchlistCard
+                  id={movie.id}
+                  title={movie.title}
+                  image={movie.image}
+                  releaseDate={movie.releaseDate}
+                  rating={movie.rating}
+                  setWatchlist={setWatchlist}
+                />
+              </Grid>
             ))
           : ""}
-      </div>
+      </Grid>
     </>
   );
 }
