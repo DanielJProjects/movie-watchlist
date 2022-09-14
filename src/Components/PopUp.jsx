@@ -2,6 +2,7 @@ import React from "react";
 import Search from "./Search";
 import SearchCard from "./SearchCard";
 import { MdClear } from "react-icons/md";
+import PhoneModal from "./phoneModal";
 
 function PopUp({ setPopUp, watchlist, setWatchlist }) {
   const [data, setData] = React.useState([]);
@@ -35,22 +36,28 @@ function PopUp({ setPopUp, watchlist, setWatchlist }) {
 
   return (
     <>
-      <div className="outer-div">
-        <div className="popup">
-          <div className="header">
-            <div className="btn-close">
-              <button
-                className="btn-close-popup"
-                onClick={() => setPopUp(false)}
-              >
-                <MdClear />
-              </button>
+      {window.innerWidth < 500 ? (
+        <PhoneModal setPopUp={setPopUp} setQuery={setQuery} movies={movies} />
+      ) : (
+        <>
+          <div className="outer-div">
+            <div className="popup">
+              <div className="header">
+                <div className="btn-close">
+                  <button
+                    className="btn-close-popup"
+                    onClick={() => setPopUp(false)}
+                  >
+                    <MdClear />
+                  </button>
+                </div>
+                <Search setQuery={setQuery} />
+              </div>
+              <div className="movies">{movies}</div>
             </div>
-            <Search setQuery={setQuery} />
           </div>
-          <div className="movies">{movies}</div>
-        </div>
-      </div>
+        </>
+      )}
     </>
   );
 }

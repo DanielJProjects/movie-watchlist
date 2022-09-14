@@ -3,10 +3,14 @@ import { MdSearch } from "react-icons/md";
 
 function Search({ setQuery }) {
   return (
-    <div className="searchBar">
-      <MdSearch className="search-icon" />
+    <div className={window.innerWidth < 500 ? "mobile-searchbar" : "searchBar"}>
+      <MdSearch
+        className={
+          window.innerWidth < 500 ? "mobile-search-icon" : "search-icon"
+        }
+      />
       <input
-        className="input"
+        className={window.innerWidth < 500 ? "mobile-input" : "input"}
         placeholder="Enter a movie"
         onChange={(event) => setQuery(event.target.value)}
       />
