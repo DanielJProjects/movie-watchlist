@@ -4,7 +4,6 @@ import FindMovie from "./Components/FindMovie";
 import PopUp from "./Components/PopUp";
 import WatchlistCard from "./Components/WatchlistCard";
 import Grid from "@mui/material/Grid";
-import PhoneModal from "./Components/phoneModal";
 
 function App() {
   const [popUp, setPopUp] = React.useState(false);
