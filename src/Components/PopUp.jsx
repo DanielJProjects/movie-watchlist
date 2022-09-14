@@ -2,7 +2,7 @@ import React from "react";
 import Search from "./Search";
 import SearchCard from "./SearchCard";
 import { MdClear } from "react-icons/md";
-import PhoneModal from "./phoneModal";
+import PhoneModal from "./PhoneModal";
 
 function PopUp({ setPopUp, watchlist, setWatchlist }) {
   const [data, setData] = React.useState([]);
