@@ -69,8 +69,6 @@ body {
   top: 0;
   left: 0;
   padding-bottom: 70px;
-  transition: 1s;
-  left: 0;
 }
 
 .mobile-header {
@@ -96,8 +94,6 @@ body {
   outline: none;
   font-size: 40px;
   background-color: transparent;
-  transition: 1s;
-  left: 0;
 }
 
 .btn-close {
