@@ -1,224 +1,281 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
-
 
 .title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 50px;    
-    color: #13131B;
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  color: #13131b;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
 }
 
-
 .btn-find {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    color: #FCFCFC;
-    border: none;
-    width: 200px;
-    height: 40px;
-    background: #EF285B;
-    border-radius: 100px;
-    cursor: pointer;
-    
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fcfcfc;
+  border: none;
+  width: 200px;
+  height: 40px;
+  background: #ef285b;
+  border-radius: 100px;
+  cursor: pointer;
 }
 
 .btn-find-cen {
-    display: flex;
-    justify-content: center;
-    margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
 }
 
 .outer-div {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    position: absolute;
-    top: 160px;
-    left: 0;
-    z-index: 3;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  position: absolute;
+  top: 160px;
+  left: 0;
+  z-index: 3;
 }
 
 .popup {
-    border: 1px solid #13131B;
-    width: 470px;
-    height: 500px;
-    background-color: #f5f5f5;
-    position: relative;
+  border: 1px solid #13131b;
+  width: 470px;
+  height: 500px;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.mobile-movies {
+  overflow: scroll;
+  height: 100%;
+}
+
+.mobile-popup {
+  width: 100vw;
+  height: 100%;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 70px;
+}
+
+.mobile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .btn-close-popup {
-    cursor: pointer;
-    color: #000000;
-    border:none;
-    background-color:transparent;
-    outline:none;
+  cursor: pointer;
+  color: #000000;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.mobile-btn-close-popup {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 40px;
+  background-color: transparent;
 }
 
 .btn-close {
-    display: flex;
-    justify-content: right;
-    margin-right: 5px;
-    margin-top: 5px;
+  display: flex;
+  justify-content: right;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.mobile-btn-close {
+  display: flex;
+  justify-content: left;
+  margin-left: 5px;
+  margin-top: 10px;
+  background-color: transparent;
 }
 
 .searchBar {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.mobile-searchbar {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+  padding-right: 10px;
 }
 
 .search-icon {
-    position: absolute;
-    left: 9.5%;
-    top: 10.25%;
+  position: absolute;
+  left: 9.5%;
+  top: 10.25%;
+}
+
+.mobile-search-icon {
+  display: none;
 }
 
 .input {
-    box-sizing: border-box;
-    border: 1.5px solid #13131B;
-    border-radius: 100px;
-    padding-left: 30px;
-    width: 400px;
-    height: 37px;
+  box-sizing: border-box;
+  border: 1.5px solid #13131b;
+  border-radius: 100px;
+  padding-left: 30px;
+  width: 400px;
+  height: 37px;
+}
+
+.mobile-input {
+  box-sizing: border-box;
+  border: 1.5px solid #13131b;
+  border-radius: 100px;
+  padding-left: 20px;
+  width: 400px;
+  height: 37px;
 }
 
 .searchCard {
-    text-align: left;
-    width: 20rem;
-    padding-left: 10px;
-    display: flex;
-    margin-bottom: 20px;
-    margin-left: 37px;
+  text-align: left;
+  width: 20rem;
+  padding-left: 10px;
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 37px;
 }
 
 .searchCardImg {
-    width: 95px;
-    height: 140px;
+  width: 95px;
+  height: 140px;
 }
 
 .searchCardInfo {
-    margin-top: 20px;
-    margin-left: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 p {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    color: #13131B;
-    margin-bottom: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #13131b;
+  margin-bottom: 8px;
 }
 
 .searchCardInfo-title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    color: #13131B;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #13131b;
 }
 
 .movies {
-    overflow: scroll;
-    height: 390px;
+  overflow: scroll;
+  height: 390px;
 }
 
 .btn-watchlist-add {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    color: #FCFCFC;
-    border: none;
-    width: 120px;
-    height: 25px;
-    background: #EF285B;
-    border-radius: 100px;
-    cursor: pointer;
-    margin-top: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fcfcfc;
+  border: none;
+  width: 120px;
+  height: 25px;
+  background: #ef285b;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .btn-del-container {
-    display: flex;
-    justify-content: right;
+  display: flex;
+  justify-content: right;
 }
 
 .btn-watchlist-add:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
-.btn-img-container:hover .watchlistCardImg{
-    opacity: 0.3;
+.btn-img-container:hover .watchlistCardImg {
+  opacity: 0.3;
 }
 
 .btn-img-container:hover .btn-watchListCard-del {
-    display: inline-block;
+  display: inline-block;
 }
 
 .btn-img-container {
-    height: 344px;
-    width: 230px;
+  height: 344px;
+  width: 230px;
 }
 
 .btn-watchListCard-del {
-    position: absolute;
-    cursor: pointer;
-    color: #000000;
-    border:none;
-    background-color:transparent;
-    outline:none;
-    z-index: 2;
-    display: none;
-    margin-top: 5px;
-    margin-right: 5px;
+  position: absolute;
+  cursor: pointer;
+  color: #000000;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  z-index: 2;
+  display: none;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
-
 .watchlist {
-    display: flex;
-    justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
 .watchlistCard {
-    text-align: left;
-    width: 15rem;
+  text-align: left;
+  width: 15rem;
+  margin-top: 50px;
 }
 
 .watchlistCardImg {
-    width: 230px;
-    height: 340px;
+  width: 230px;
+  height: 340px;
 }
-
 
 .watchlistCardInfo-title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    color: #13131B;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #13131b;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 15rem 15rem 15rem 15rem 15rem;
-    grid-gap: 3rem;
-    margin-top: 30px;
+.popup-open {
+  position: fixed;
+}
+
+@media (max-width: 500px) {
+  .popup {
     width: 100%;
-    margin-top: 70px;
+    height: 100%;
   }
+}
