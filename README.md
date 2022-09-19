@@ -5,7 +5,7 @@ This app uses TMDB's API. This is the first independent project I made after lea
 
 ## Demo 
 
-https://genuine-horse-d3f9d4.netlify.app 
+https://moviewatchlist12.netlify.app
 
 ## Technologies
 
