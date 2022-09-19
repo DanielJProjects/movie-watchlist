@@ -9,7 +9,7 @@ https://moviewatchlist12.netlify.app
 
 ## Technologies
 
-This prroject was created using: 
+This project was created using: 
 
 - React.js
 - CSS
